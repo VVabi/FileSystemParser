@@ -103,8 +103,9 @@ namespace FileSystemParser
         }
         static void Main(string[] args)
         {
-            TreeNode s = parseFileTree("C:\\Users", "C:\\Users");
-            s.printTree(0, 3);
+            TreeNode s = parseFileTree(args[0], args[0]);
+
+            s.printTree(0, int.Parse(args[1]));
         }
     }
 }
